@@ -1,6 +1,11 @@
 # Few-shot Out-of-Distribution Detection
 This repository contains code used for 
-'Kuan-Chieh Wang, Paul Vicol, Eleni Triantafillou, Richard Zemel. (2020). “Few-shot Out-of-Distribution Detection.” International Conference on Machine Learning (ICML) Workshop  on  Uncertainty and Robustness in Deep Learning'
+```
+Kuan-Chieh Wang, Paul Vicol, Eleni Triantafillou, Richard Zemel. 
+(2020). “Few-shot Out-of-Distribution Detection.” 
+International Conference on Machine Learning (ICML) 
+Workshop on Uncertainty and Robustness in Deep Learning
+```
 
 
 ## Python Environment
@@ -10,8 +15,8 @@ For packages, see `requirements.txt`.
 
 Example cmd for creating a Conda Env
 ```
-conda create -n fs-ood python=3.7 pip
-source activate fs-ood
+conda create -n pnl python=3.7 pip
+source activate pnl
 pip install -r requirements.txt
 ```
 
@@ -69,3 +74,24 @@ for CIFAR-FS
 ```
 
 
+## Acknowledgement
+This code is built upon many other repos.   
+An incomplete list includes:
+* https://github.com/jakesnell/prototypical-networks
+* https://github.com/wyharveychen/CloserLookFewShot
+* https://github.com/hendrycks/outlier-exposure
+
+Also, during development of the private (and ugly repo), my colleagues [Paul](https://github.com/asteroidhouse) and [Eleni](https://github.com/eleniTriantafillou) contributed in very significant ways.
+
+## Citation
+
+If you use this code, consider citing:
+
+```
+@article{wang2020fsood,
+  title={Few-shot Out-of-Distribution Detection},
+  author={Kuan-Chieh Wang and Paul Vicol and Eleni Triantafillou and Richard Zemel},
+  booktitle={{International Conference on Machine Learning (ICML) Workshop on Uncertainty and Robustness in Deep Learning}},
+  year={2020}
+}
+```

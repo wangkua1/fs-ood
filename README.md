@@ -48,23 +48,23 @@ pip install -r requirements.txt
 **To train standard (all-way) classifiers**  
 for CIFAR-FS
 ```bash
-./run_scripts/classify_classic/cifar-submitted.sh
+./run_scripts/classify_classic/cifar.sh
 ```
 for miniImageNet
 ```bash
-./run_scripts/classify_classic/miniimagenet-submitted.sh
+./run_scripts/classify_classic/miniimagenet.sh
 ```
 
 ### Training OEC for different ways/shots  
 ```bash
-./run_scripts/train_confidence/ooe-submitted.sh
+./run_scripts/train_confidence/cifar.sh
 ```
 
 
 ### Evaluate OOD   
 for CIFAR-FS
 ```bash
-./run_scripts/eval_ood/submitted.sh
+./run_scripts/eval_ood/cifar.sh
 ```
 
 

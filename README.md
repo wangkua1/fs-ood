@@ -78,6 +78,8 @@ An incomplete list includes:
 * https://github.com/wyharveychen/CloserLookFewShot
 * https://github.com/hendrycks/outlier-exposure
 
+Also, during development of the private (and ugly repo), my colleagues [Paul](https://github.com/asteroidhouse) and [Eleni](https://github.com/eleniTriantafillou) contributed in very significant ways.
+
 ## Citation
 
 If you use this code, consider citing:

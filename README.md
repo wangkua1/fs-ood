@@ -15,8 +15,8 @@ For packages, see `requirements.txt`.
 
 Example cmd for creating a Conda Env
 ```
-conda create -n fs-ood python=3.7 pip
-source activate fs-ood
+conda create -n pnl python=3.7 pip
+source activate pnl
 pip install -r requirements.txt
 ```
 

@@ -1,6 +1,11 @@
 # Few-shot Out-of-Distribution Detection
 This repository contains code used for 
-'Kuan-Chieh Wang, Paul Vicol, Eleni Triantafillou, Richard Zemel. (2020). “Few-shot Out-of-Distribution Detection.” International Conference on Machine Learning (ICML) Workshop  on  Uncertainty and Robustness in Deep Learning'
+```
+Kuan-Chieh Wang, Paul Vicol, Eleni Triantafillou, Richard Zemel. 
+(2020). “Few-shot Out-of-Distribution Detection.” 
+International Conference on Machine Learning (ICML) 
+Workshop on Uncertainty and Robustness in Deep Learning
+```
 
 
 ## Python Environment
@@ -66,3 +71,22 @@ for CIFAR-FS
 ```
 
 
+## Acknowledgement
+This code is built upon many other repos.   
+An incomplete list includes:
+* https://github.com/jakesnell/prototypical-networks
+* https://github.com/wyharveychen/CloserLookFewShot
+* https://github.com/hendrycks/outlier-exposure
+
+## Citation
+
+If you use this code, consider citing:
+
+```
+@article{wang2020fsood,
+  title={Few-shot Out-of-Distribution Detection},
+  author={Kuan-Chieh Wang and Paul Vicol and Eleni Triantafillou and Richard Zemel},
+  booktitle={{International Conference on Machine Learning (ICML) Workshop on Uncertainty and Robustness in Deep Learning}},
+  year={2020}
+}
+```

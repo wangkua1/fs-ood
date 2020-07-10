@@ -30,11 +30,11 @@ pip install -r requirements.txt
 ```
 
 
-To download the out-of-dataset (OOS) datasets, run:
+**Download the out-of-dataset (OOS) datasets**
 ```bash
 # takes a few seconds
 ./download_scripts/download_anomaly.sh  # Downloads the Texture, Places, and notMNIST datasets
-# each of the following takes a few seconds to download, untar takes a few minutes
+# each of the following takes a few seconds to download, untar takes a few minutes (<5)
 ./download_scripts/download_isun.sh
 ./download_scripts/download_lsun.sh
 ./download_scripts/download_tinyimagenet.sh
@@ -80,6 +80,8 @@ An incomplete list includes:
 * https://github.com/jakesnell/prototypical-networks
 * https://github.com/wyharveychen/CloserLookFewShot
 * https://github.com/hendrycks/outlier-exposure
+* https://github.com/facebookresearch/odin
+* https://github.com/pokaxpoka/deep_Mahalanobis_detector
 
 Also, during development of the private (and ugly repo), my colleagues [Paul](https://github.com/asteroidhouse) and [Eleni](https://github.com/eleniTriantafillou) contributed in very significant ways.
 

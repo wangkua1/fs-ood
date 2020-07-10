@@ -93,7 +93,7 @@ def _load_ood_dataset(ood_dataset_name, opt_config):
     elif ood_dataset_name == 'places3':
         return torch.load(os.path.join(DATA_DIR, 'places.t7')).numpy() / 255.
     elif ood_dataset_name == 'svhn':
-        ds = torchvision.datasets.SVHN('.', split='test', transform=None, target_transform=None, download=True)
+        ds = torchvision.datasets.SVHN('data', split='test', transform=None, target_transform=None, download=True)
         data = ds.data
         np.random.shuffle(data)
         return data[:10000] / 255.

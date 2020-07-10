@@ -7,9 +7,10 @@ a=1
 lr=1e-1
 b=128
 s=0
+r=1
+db=0
 
-
-model_dir=$ROOT1/fs-ood-submitted/$d-ensemble/$d-$o-$a-$lr-$b-$s
+model_dir=results/$d-ensemble-${db}/$d-$o-$a-$lr-$b-$s-$r 
 model_path=${model_dir}/ckpt_best.pt
 
 d=cifar-fs
@@ -22,7 +23,7 @@ for way in 2 3 4 5 6 7 8; do
 for shot in 1 2 5 10 20 50; do
 
 name=${m}-${way}-${shot}-${arch}-${lr}
-oec_dir=${ROOT1}/fs-ood-s/train_confidence-ways-shots-grid/${name}
+oec_dir=results/train_confidence-ways-shots-grid/${name}
 oec_path=${oec_dir}/${name}_conf_best.pt
 cmd="train_confidence.py \
 	--output_dir $oec_dir \

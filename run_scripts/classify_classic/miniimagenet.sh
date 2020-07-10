@@ -1,4 +1,6 @@
 
+source activate pnl
+
 d=miniimagenet
 p=10
 lr=1e-1
@@ -9,13 +11,13 @@ for b in 128; do
 for s in 0; do
 
 cmd="classify_classic.py \
---dataroot 'data' \
+--dataroot data \
 --ckpt_every 50 \
 --epochs  200 \
 --dataset $d \
 --optim $o \
 --seed $s \
---output_dir $ROOT1/lcbo/$d/$d-$o-$a-$lr-$b-$s \
+--output_dir results/lcbo/$d/$d-$o-$a-$lr-$b-$s \
 --lr $lr \
 --pdim $p \
 --n_eval_batches 10 \

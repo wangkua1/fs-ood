@@ -1,5 +1,6 @@
+source activate pnl
 
-
+db=0
 d=cifar-fs-train
 p=10
 lr=1e-1
@@ -8,13 +9,12 @@ a=1
 lr=1e-1
 b=128
 s=0
+r=1
 
 
-model_dir=$ROOT1/fs-ood-submitted/$d-ensemble/$d-$o-$a-$lr-$b-$s
+model_dir=results/$d-ensemble-${db}/$d-$o-$a-$lr-$b-$s-$r
 model_path=${model_dir}/ckpt_best.pt
 
-
-db=0
 d=cifar-fs
 
 for ood in MPP DM-all native-spp native-ed deep-ed-iso oec; do
@@ -26,7 +26,7 @@ cmd="eval_ood.py \
 --fsmodel_path - \
 --glow_dir - \
 --oec_path - \
---output_dir ${ROOT1}/fs-ood-submitted/eval_ood/$d \
+--output_dir results/eval_ood/$d \
 --dataset $d \
 --dataroot data \
 --episodic_ood_eval 1 \

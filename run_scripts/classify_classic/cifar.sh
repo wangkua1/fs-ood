@@ -16,9 +16,9 @@ cmd="classify_classic.py \
 --dataset $d \
 --optim $o \
 --seed $s \
---output_dir $ROOT1/fs-ood-submitted/$d-ensemble-${db}/$d-$o-$a-$lr-$b-$s-$r \
+--output_dir results/$d-ensemble-${db}/$d-$o-$a-$lr-$b-$s-$r \
 --lr $lr \
---dataroot $ROOT1/data/ \
+--dataroot data/ \
 --pdim $p \
 --n_eval_batches 10 \
 --batch-size $b  \
@@ -26,7 +26,6 @@ cmd="classify_classic.py \
 --db ${db} \
 --test-batch-size 1000 \
 --data_augmentation $a"
-
 
 
 python $cmd

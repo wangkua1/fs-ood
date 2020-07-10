@@ -3,5 +3,5 @@ cd data
 
 # Download iSUN
 wget https://www.dropbox.com/s/ssz7qxfqae0cca5/iSUN.tar.gz
-tar -xvzf iSUN.tar.gz
+tar -xzf iSUN.tar.gz
 rm iSUN.tar.gz

@@ -1,3 +1,68 @@
-# fs-ood
+# Few-shot Out-of-Distribution Detection
+This repository contains code used for 
+'Kuan-Chieh Wang, Paul Vicol, Eleni Triantafillou, Richard Zemel. (2020). “Few-shot Out-of-Distribution Detection.” International Conference on Machine Learning (ICML) Workshop  on  Uncertainty and Robustness in Deep Learning'
 
-coming soon ... 
+
+## Python Environment
+
+Python==3.7.3
+For packages, see `requirements.txt`.
+
+Example cmd for creating a Conda Env
+```
+conda create -n fs-ood python=3.7 pip
+source activate fs-ood
+pip install -r requirements.txt
+```
+
+
+## Download Datasets
+
+**Download miniImageNet**
+```bash
+./download_scripts/download_miniimagenet.sh
+```
+
+
+To download the out-of-dataset (OOS) datasets, run:
+```bash
+./download_scripts/download_anomaly.sh  # Downloads the Texture, Places, and notMNIST datasets
+./download_scripts/download_isun.sh
+./download_scripts/download_lsun.sh
+./download_scripts/download_tinyimagenet.sh
+```
+
+
+## Experiments
+
+### (Pre-)Training backbone/encoder
+
+**To train standard (all-way) classifiers**  
+for CIFAR-FS
+```bash
+./run_scripts/classify_classic/cifar-submitted.sh
+```
+for miniImageNet
+```bash
+./run_scripts/classify_classic/miniimagenet-submitted.sh
+```
+
+### Training OEC for different ways/shots  
+```bash
+./run_scripts/train_confidence/ooe-submitted.sh
+```
+
+
+### Evaluate OOD   
+for CIFAR-FS
+```bash
+./run_scripts/eval_ood/submitted.sh
+```
+
+
+### Train ProtoNet and MAML 
+```bash
+./run_scripts/train/submitted.sh
+```
+
+

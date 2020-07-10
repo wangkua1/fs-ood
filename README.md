@@ -20,13 +20,16 @@ pip install -r requirements.txt
 
 **Download miniImageNet**
 ```bash
+# takes a few seconds
 ./download_scripts/download_miniimagenet.sh
 ```
 
 
 To download the out-of-dataset (OOS) datasets, run:
 ```bash
+# takes a few seconds
 ./download_scripts/download_anomaly.sh  # Downloads the Texture, Places, and notMNIST datasets
+# each of the following takes a few seconds to download, untar takes a few minutes
 ./download_scripts/download_isun.sh
 ./download_scripts/download_lsun.sh
 ./download_scripts/download_tinyimagenet.sh
